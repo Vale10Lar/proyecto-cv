@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <title>Proyect-ArgProg-CV</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!--MENU PARA EL ENCABEZADO-->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">VEL</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!--SECCION DE INICIO-->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="imagenes/yo (2).png" alt="">
+        </div>
+        <h1>Valeria Lardin</h1>
+        <h2>Desarrollador Front End</h2>
+        <div class="redes">
+        <a href="#"><i class="fi fi-brands-facebook"></i></a>
+        <a href="#"><i class="fi fi-brands-twitter"></i></a>
+        <a href="#"><i class="fi fi-brands-linkedin"></i></a>
+        <a href="#"><i class="fi fi-brands-telegram"></i></a>
+        <a href="#"><i class="fi fi-brands-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p><span>Hola,soy Valeria Lardin.</span>Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Morbi interdum tincidunt eros vel mollis.
+          Duis luctus libero a leo sagittis, quis consectetur turpis maximus.
+          Pellentesque ultrices finibus purus. Maecenas pretium odio nec
+          fringilla blandit. </p>
+          <div class="fila">
+          <!--Mis Datos Personales-->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Fecha de Nacimiento</strong>
+                10-07-1981
+              </li>
+              <li>
+                <strong>Celular</strong>
+                2622-641424
+              </li>
+              <li>
+                <strong>E-mail</strong>
+                valelar81@gmail.com
+              </li>
+              <li>
+                <strong>Web-site</strong>
+                www.example.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Tupungato,Mendoza,Argentina
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
+          <!--HOBBIES-->
+          <div class="col">
+            <h3>Hobbies</h3>
+            <div class="contenedor-hobbies">
+              <div class="hobby">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+
+              <div class="hobby">
+                <i class="fa-solid fa-music"></i>
+                <span>MÚSICA</span>
+              </div>
+
+              <div class="hobby">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+
+              <div class="hobby">
+                <i class="fa-sharp fa-solid fa-plane"></i>
+                <span>VIAJES</span>
+              </div>
+
+              <div class="hobby">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>SOFTWARE</span>
+              </div>
+
+              <div class="hobby">
+                <i class="fa-solid fa-palette"></i>
+                <span>PINTURA</span>
+              </div>
+
+              <div class="hobby">
+                <i class="fa-solid fa-film"></i>
+                <span>CINE</span>
+              </div>
+
+              <div class="hobby">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOGRAFÍA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          Descargar CV <i class="fa-sharp fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+    <!--SECCION SKILL-->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!--Technical Skills-->
+          <div class="col-1">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <img src="imagenes/flaticon/js.png" alt=""/>
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <!--recordar agregarjavascript  lo de clases @keyframe-->
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="imagenes/flaticon/html5.png" alt="" />
+              <span>Html5</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="imagenes/flaticon/css-3.png" alt="" />
+              <span>Css3</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="imagenes/flaticon/wordpress.png" alt="" />
+              <span>Wordpress</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="imagenes/flaticon/piton.png" alt="" />
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Profesional Skill-->
+          <div class="col-2">
+            <h3>Profesional Skills</h3>
+            <div class="skill">
+              <img
+                src="imagenes/flaticon/el-pensamiento-de-diseno (2).png"
+                alt=""
+              />
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>92%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="imagenes/flaticon/trabajo-en-equipo.png" alt="" />
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="imagenes/flaticon/conversacion.png" alt="" />
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="imagenes/flaticon/concentrado.png" alt="" />
+              <span>Concentración</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <img src="imagenes/flaticon/project-management.png" alt="" />
+              <span>Project Management</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--SECCION CURRICULUM-->
+    <section class="curriculum" id="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Master Development</h4>
+              <span class="institucion">University Example</span>
+              <span class="fecha">2005-2010</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut qui
+                iste impedit veritatis ullam quae laboriosam.Rerum aspernatur
+                obcaecati fugiat optio amet ex, debitis ipsam architecto nulla
+                cumque. 
+              </p>
+              <div class="conector-izquierdo">
+                <div class="circulo-izquierdo"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Arte & Multimeia</h4>
+              <span class="institucion">Universidad Example</span>
+              <span class="fecha">2003-2007</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut qui
+                iste impedit veritatis ullam quae laboriosam.Rerum aspernatur
+                obcaecati fugiat optio amet ex, debitis ipsam architecto nulla
+                cumque. 
+              </p>
+              <div class="conector-izquierdo">
+                <div class="circulo-izquierdo"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Ingieneria Informatica</h4>
+              <span class="institucion">Universidad Example</span>
+              <span class="fecha">1999-2002</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut qui
+                iste impedit veritatis ullam quae laboriosam.Rerum aspernatur
+                obcaecati fugiat optio amet ex, debitis ipsam architecto nulla
+                cumque. 
+              </p>
+              <div class="conector-izquierdo">
+                <div class="circulo-izquierdo"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col derecha">
+            <h3>Experiencia Laboral</h3>
+            <div class="item der">
+              <h4>Front Developer</h4>
+              <span class="empresa">Company Example</span>
+              <span class="fecha">2019-2021</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut qui
+                iste impedit veritatis ullam quae laboriosam.Rerum aspernatur
+                obcaecati fugiat optio amet ex, debitis ipsam architecto nulla
+                cumque. 
+              </p>
+              <div class="conector-derecho">
+                <div class="circulo-derecho"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Junior Front Developer</h4>
+              <span class="empresa">Company Example</span>
+              <span class="fecha">2015-2017</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut qui
+                iste impedit veritatis ullam quae laboriosam.Rerum aspernatur
+                obcaecati fugiat optio amet ex, debitis ipsam architecto nulla
+                cumque. 
+              </p>
+              <div class="conector-derecho">
+                <div class="circulo-derecho"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Front Developer</h4>
+              <span class="empresa">Company Example</span>
+              <span class="fecha">2017-2018</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut qui
+                iste impedit veritatis ullam quae laboriosam.Rerum aspernatur
+                obcaecati fugiat optio amet ex, debitis ipsam architecto nulla
+                cumque. 
+              </p>
+              <div class="conector-derecho">
+                <div class="circulo-derecho"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--SECCION CONTACTO-->
+    <seccion id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!--FORMULARIO-->
+          <div class="col">
+            <input type="text" placeholder="Nombre" />
+            <input type="text" placeholder="Número telefónico" />
+            <input type="text" placeholder="Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="display: block;
+              margin-bottom: 2px;
+              width: 5px;
+              height: 20px;
+              line-height: 1px;
+              margin: 1px 2px;
+              font-size: 30px;30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!--Maps-->
+          <div class="col">
+            <img src="imagenes/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Direccion:Tupungato,Mendoza,Argentina
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile"></i>
+                  Celular:2622-641424
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email:vael@example.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </seccion>
+    <!--PIE DE PAGINA-->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="#"><i class="fi fi-brands-facebook"></i></a>
+        <a href="#"><i class="fi fi-brands-twitter"></i></a>
+        <a href="#"><i class="fi fi-brands-linkedin"></i></a>
+        <a href="#"><i class="fi fi-brands-telegram"></i></a>
+        <a href="#"><i class="fi fi-brands-instagram"></i></a>
+      </div>
+      <div class="links-iconos-skills">
+        <a
+          href="https://www.flaticon.es/iconos-gratis/concentracion"
+          title="concentración iconos"
+          >Concentración iconos creados por Flat Icons - Flaticon</a
+        >
+        <a
+          href="https://www.flaticon.es/iconos-gratis/gestionar"
+          title="gestionar iconos"
+          >Gestionar iconos creados por Nuricon - Flaticon</a
+        >
+        <a
+          href="https://www.flaticon.es/iconos-gratis/conversacion"
+          title="conversacion iconos"
+          >Conversacion iconos creados por Vectors Market - Flaticon</a
+        >
+        <a
+          href="https://www.flaticon.es/iconos-gratis/trabajo-en-equipo"
+          title="trabajo en equipo iconos"
+          >Trabajo en equipo iconos creados por Flat Icons - Flaticon</a
+        >
+        <a
+          href="https://www.flaticon.es/iconos-gratis/creatividad"
+          title="creatividad iconos"
+          >Creatividad iconos creados por Eucalyp - Flaticon</a
+        >
+        <a
+          href="https://www.flaticon.es/iconos-gratis/javascript"
+          title="javascript iconos"
+          >Javascript iconos creados por Freepik - Flaticon</a
+        >
+        <a
+          href="https://www.flaticon.es/iconos-gratis/html5"
+          title="html5 iconos"
+          >Html5 iconos creados por Freepik - Flaticon</a
+        >
+        <a
+          href="https://www.flaticon.es/iconos-gratis/archivo-de-python"
+          title="archivo de python iconos"
+          >Archivo de python iconos creados por Flat Icons - Flaticon</a
+        >
+        <a
+          href="https://www.flaticon.com/free-icons/wordpress"
+          title="wordpress icons"
+          >Wordpress icons created by Freepik - Flaticon</a
+        >
+        <a href="https://www.flaticon.com/free-icons/css" title="css icons"
+          >Css icons created by Pixel perfect - Flaticon</a >
+      </div>
+      <div>
+        <a href="https://www.freepik.es/vector-gratis/fondo-techno-moderno-diseno-baja-poli_18355708.htm#&position=2&from_view=undefined">Imagen de kjpargeter</a> en Freepik
+        <a href="https://www.freepik.es/foto-gratis/collage-fondo-programacion_34089154.htm#page=2&query=background%20desarrollo%20web&position=0&from_view=search&track=ais">Freepik</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
